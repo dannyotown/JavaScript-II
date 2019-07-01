@@ -1,6 +1,17 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
-
+function GrandPa(){
+  console.log('Hello');
+  function Dad(){
+    console.log('Hello, Everyone');
+    function Mom(){
+      console.log('School is for fools');
+    }
+    mom();
+  }
+  dad();
+}
+GrandPa();
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
