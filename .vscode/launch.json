@@ -8,7 +8,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceFolder}\\assignments\\array-methods.js"
+            "program": "${workspaceFolder}\\assignments\\closure.js"
         }
     ]
 }
