@@ -78,7 +78,6 @@ console.log(contains('Pencil', items, ifContains));
 
 /* STRETCH PROBLEM */
 
-removeDuplicates(['Hello', 'Hi', 'Hi', 'Taco', 'Hello', 'Hi']);
 function removeDuplicates(array, cb) {
   // removeDuplicates removes all duplicate values from the given array.
   // Pass the duplicate free array to the callback function.
@@ -91,5 +90,10 @@ function removeDuplicates(array, cb) {
       newArray.push(array[i]);
     }
   }
-  console.log(newArray);
+  return cb(newArray);
 }
+
+function consoleLogDup(arr){
+  console.log(arr);
+}
+removeDuplicates(['Hello', 'Hi', 'Hi', 'Taco', 'Hello', 'Hi'], consoleLogDup)
